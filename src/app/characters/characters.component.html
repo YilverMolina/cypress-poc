@@ -1,2 +1,8 @@
 <app-header></app-header>
-<p>characters works!</p>
+<div class="characters">
+    <div class="character" *ngFor="let character of characters">
+        <img [src]="character.image" alt="">
+        <h3>{{character.name}}</h3>
+        <span>{{character.status}}</span>
+    </div>
+</div>
