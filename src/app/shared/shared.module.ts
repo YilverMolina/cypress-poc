@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
+import { FilterByPipe } from './pipes/filter-by.pipe';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    FilterByPipe
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { ButtonModule } from 'primeng/button';
     ButtonModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FilterByPipe
   ]
 })
 export class SharedModule { }

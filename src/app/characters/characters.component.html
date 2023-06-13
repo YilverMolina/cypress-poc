@@ -2,7 +2,8 @@
     <input pInputText type="text" [(ngModel)]="globalFilter" placeholder="Search by name" />
 </app-header>
 <div class="characters">
-    <div class="item" *ngFor="let character of characters" (click)="openCharacter(character)">
+    <div class="item" *ngFor="let character of characters | filterBy: 'name': globalFilter"
+        (click)="openCharacter(character)">
         <img [src]="character.image" alt="">
         <h3>{{character.name}}</h3>
         <span>{{character.status}}</span>
