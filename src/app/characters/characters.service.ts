@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, delay } from 'rxjs';
 import { CharactersResponse } from '../shared/models/characters-response';
 
 @Injectable({
@@ -13,6 +13,8 @@ export class CharactersService {
   constructor(private http: HttpClient) { }
 
   getCharacters(): Observable<CharactersResponse> {
-    return this.http.get<CharactersResponse>('https://rickandmortyapi.com/api/character');
+    return this.http.get<CharactersResponse>('https://rickandmortyapi.com/api/character').pipe(
+      delay(5000)
+    );
   }
 }
