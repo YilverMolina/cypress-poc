@@ -14,7 +14,7 @@ export class CharactersService {
 
   getCharacters(): Observable<CharactersResponse> {
     return this.http.get<CharactersResponse>('https://rickandmortyapi.com/api/character').pipe(
-      delay(5000)
+      delay(1000)
     );
   }
 }
