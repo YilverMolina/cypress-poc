@@ -5,4 +5,8 @@ export class Character {
     name: string;
     status: string;
     gender: string;
+    location: { name: string };
+    origin: { name: string };
+    species: string;
+    type: string;
 }

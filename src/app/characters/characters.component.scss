@@ -1,11 +1,11 @@
 .characters {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 
-  .character {
+  .item {
     width: 30%;
     padding: 1rem;
     text-align: center;
@@ -28,16 +28,16 @@
 
 @media (max-width: 768px) {
   .characters {
-    .character {
-        width: 48%;
+    .item {
+      width: 48%;
     }
   }
 }
 
 @media (max-width: 460px) {
-    .characters {
-      .character {
-          width: 90%;
-      }
+  .characters {
+    .item {
+      width: 90%;
     }
   }
+}

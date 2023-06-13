@@ -1,8 +1,14 @@
-<app-header></app-header>
+<app-header>
+    <input pInputText type="text" [(ngModel)]="globalFilter" placeholder="Search by name" />
+</app-header>
 <div class="characters">
-    <div class="character" *ngFor="let character of characters">
+    <div class="item" *ngFor="let character of characters" (click)="openCharacter(character)">
         <img [src]="character.image" alt="">
         <h3>{{character.name}}</h3>
         <span>{{character.status}}</span>
     </div>
 </div>
+
+<p-dialog [modal]="true" header="Character detail" [maximizable]="true" [(visible)]="isDetailVisible">
+    <app-character [character]="selectedCharacter"></app-character>
+</p-dialog>

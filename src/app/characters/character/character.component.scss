@@ -1,0 +1,10 @@
+.character {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  > img {
+    width: 100px;
+    border-radius: 10rem;
+  }
+}

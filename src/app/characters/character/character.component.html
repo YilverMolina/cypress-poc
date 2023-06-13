@@ -1,1 +1,35 @@
-<p>character works!</p>
+<div class="character" *ngIf="character">
+    <img [src]="character.image" alt="">
+    <table>
+        <tbody>
+            <tr>
+                <td><strong>Name</strong></td>
+                <td>{{character.name}}</td>
+            </tr>
+            <tr>
+                <td><strong>Gender</strong></td>
+                <td>{{character.gender}}</td>
+            </tr>
+            <tr>
+                <td><strong>Status</strong></td>
+                <td>{{character.status}}</td>
+            </tr>
+            <tr>
+                <td><strong>Location</strong></td>
+                <td>{{character.location.name}}</td>
+            </tr>
+            <tr>
+                <td><strong>Origin</strong></td>
+                <td>{{character.origin.name}}</td>
+            </tr>
+            <tr>
+                <td><strong>Species</strong></td>
+                <td>{{character.species}}</td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>{{character.type}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

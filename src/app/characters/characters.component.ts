@@ -12,6 +12,9 @@ export class CharactersComponent implements OnInit {
 
   characters: Character[] = [];
   isLoading: boolean = false;
+  isDetailVisible: boolean = false;
+  selectedCharacter: Character;
+  globalFilter: string = '';
 
   constructor(
     private charactersService: CharactersService,
@@ -30,6 +33,11 @@ export class CharactersComponent implements OnInit {
         this.isLoading = false;
       }
     })
+  }
+
+  openCharacter(character: Character): void {
+    this.selectedCharacter = character;
+    this.isDetailVisible = true;
   }
 
 }
