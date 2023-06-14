@@ -19,11 +19,19 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "primeicons": "^6.0.1",
     "primeng": "^14.2.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js,ts}"
+    ]
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.11",
