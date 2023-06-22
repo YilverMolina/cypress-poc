@@ -1,0 +1,41 @@
+@import '../../../../assets/styles/variables.scss';
+
+.btn {
+    cursor: pointer;
+    border: none;
+
+    &.medium {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+
+    &.small {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    &.large {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    &.primary {
+        background-color: $primary;
+        color: #fff;
+    }
+
+    &.secondary {
+        background-color: $secondary;
+        color: #000;
+        border: 1px solid lightgray;
+
+        &:hover {
+            @extend .primary;
+        }
+    }
+
+    &.error {
+        background-color: $error;
+        color: #fff;
+    }
+}
