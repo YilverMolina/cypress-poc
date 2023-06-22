@@ -5,8 +5,8 @@ export class Character {
     name: string;
     status: string;
     gender: string;
-    location: { name: string };
-    origin: { name: string };
+    location: { name: string; url: string };
+    origin: { name: string; url: string };
     species: string;
     type: string;
 }
