@@ -6,6 +6,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    specPattern: '**/e2e/*.cy.ts'
   },
 
   component: {
@@ -13,6 +14,6 @@ export default defineConfig({
       framework: 'angular',
       bundler: 'webpack',
     },
-    specPattern: '**/*.cy.ts',
+    specPattern: '**/component/*.cy.ts',
   },
 });

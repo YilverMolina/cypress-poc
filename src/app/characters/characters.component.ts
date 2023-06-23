@@ -28,7 +28,6 @@ export class CharactersComponent implements OnInit {
         this.isLoading = false;
       },
       error: () => {
-        console.log('err')
         this.messageService.add({ severity: 'error', summary: 'Something went wrong', detail: 'while loading the characters' });
         this.isLoading = false;
       }

@@ -1,4 +1,5 @@
 import { Character } from 'src/app/shared/models/character';
+import { CharactersResponse } from 'src/app/shared/models/characters-response';
 
 export const mockCharacter: Character = {
     id: 1,
@@ -18,3 +19,13 @@ export const mockCharacter: Character = {
     image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
     created: '2017-11-04T18:48:46.250Z'
 };
+
+export const mockCharacters: CharactersResponse = {
+    info: {
+        count: 20,
+        next: '2',
+        pages: 3,
+        prev: '0'
+    },
+    results: [mockCharacter]
+}
