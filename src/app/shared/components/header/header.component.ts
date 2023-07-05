@@ -23,6 +23,11 @@ export class HeaderComponent implements OnInit {
         label: 'Characters',
         icon: 'pi pi-discord',
         url: 'characters'
+      },
+      {
+        label: 'SVG Editor',
+        icon: 'pi pi-chart-pie',
+        url: 'svg'
       }
     ];
   }

@@ -8,6 +8,9 @@ const routes: Routes = [
   },
   {
     path: 'characters', loadChildren: () => import('./characters/characters.module').then(m => m.CharactersModule)
+  },
+  {
+    path: 'svg', loadChildren: () => import('./svg/svg.module').then(m => m.SvgModule)
   }
 ];
 
